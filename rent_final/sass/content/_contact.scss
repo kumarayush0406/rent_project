@@ -1,0 +1,106 @@
+.contact {
+    padding: 75px 0;
+
+    &__wrapper {
+        display: flex;
+
+        @media (max-width:992px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__text-block {
+        width: 40%;
+
+        @media (max-width:992px) {
+            width: 100%;
+            padding-bottom: 3rem;
+        }
+
+        h4 {
+            color: $color-orange;
+            font-family: $font-primary;
+            font-size: 1rem;
+            letter-spacing: .3em;
+            margin-bottom: 4px;
+            font-weight: 500;
+            line-height: 1.12;
+        }
+
+        h3 {
+            font-family: $font-primary;
+            font-size: 2.125rem;
+            font-weight: 500;
+            line-height: 1.12;
+            @media (max-width:992px) {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    &__inform {
+        padding-top: 15px;
+
+        p {
+            font-family: $font-primary;
+            font-size: 1rem;
+            font-weight: 500;
+            color: $color-light-grey;
+        }
+    }
+
+    &__form-wrapper {
+        width: 60%;
+
+        @media (max-width:992px) {
+            width: 100%;
+        }
+    }
+}
+
+.drag-area {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+
+    &__field {
+        padding-bottom: 20px !important;
+        padding: 0 0.5rem;
+
+        input {
+            color: #555b63;
+            border-color: rgba(85, 91, 99, 0.5);
+            background: transparent;
+            transition: all .2s ease;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            font-size: 1rem;
+            font-family: $font-primary;
+            padding: 13px 22px;
+            width: 100%;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 0px;
+        }
+
+        .text-area-input {
+            height: 125px;
+            color: #555b63;
+            border-color: rgba(85, 91, 99, 0.5);
+            background: transparent;
+            transition: all .2s ease;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            font-family: $font-primary;
+            font-size: 1rem;
+            padding: 13px 22px;
+            width: 100%;
+        }
+    }
+}
+
+#address {
+    padding-bottom: 15px;
+}

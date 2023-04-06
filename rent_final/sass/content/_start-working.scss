@@ -1,0 +1,30 @@
+.start-working {
+    background-color: $color-blue;
+    padding: 90px 0;
+
+    .container {
+        h2 {
+            color: $color-default;
+            text-align: center;
+            font-size: 3rem;
+            font-family: $font-primary;
+            font-weight: 500;
+        }
+    }
+}
+@media screen and (max-width:576px) {
+    .start-working {
+        background-color: $color-blue;
+        padding: 90px 0;
+    
+        .container {
+            h2 {
+                color: $color-default;
+                text-align: center;
+                font-size: 2rem;
+                font-family: $font-primary;
+                font-weight: 500;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.footer {
+    padding: 75px 0;
+
+    &__logo {
+        padding-bottom: 15px;
+    }
+
+    &__text-wrapper {
+        display: flex;
+        width: 100%;
+
+        @media (max-width:720px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__text {
+        width: 33.33%;
+        padding: 0 1rem;
+
+        @media (max-width:720px) {
+            width: 100%;
+        }
+
+        p {
+            text-align: center;
+            font-family: $font-primary;
+            font-size: 1rem;
+            padding-bottom: 15px;
+            font-weight: 500;
+            line-height: 1.62;
+            color: $color-light-grey;
+
+            a {
+                color: $color-light-grey;
+            }
+        }
+    }
+}

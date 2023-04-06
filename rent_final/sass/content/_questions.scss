@@ -1,0 +1,81 @@
+.questions {
+    padding-top: 105px;
+    padding-bottom: 75px;
+
+    &__wrapper {
+        display: flex;
+        @media (max-width:992px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__text-block {
+        width: 50%;
+        padding-right: 55px;
+        @media (max-width:992px) {
+            width: 100%;;
+        }
+
+        h4 {
+            color: $color-orange;
+            font-size: 1rem;
+            font-family: $font-primary;
+            letter-spacing: .3rem;
+            margin-bottom: 4px;
+            font-weight: 500;
+            line-height: 1.12;
+        }
+
+        h3 {
+            font-size: 3rem;
+            font-family: $font-primary;
+            font-weight: 500;
+            line-height: 1.12;
+            @media (max-width:992px) {
+                font-size: 1.7rem;
+            }
+        }
+
+        p {
+            color: $color-light-grey;
+            font-size: 1rem;
+            font-family: $font-primary;
+            padding-top: 15px;
+            line-height: 1.62;
+            font-weight: 400;
+        }
+    }
+
+}
+
+.accordion_container {
+    width: 50%;
+    @media (max-width:992px) {
+        width: 100%;;
+    }
+}
+
+.accordion_head {
+    color: $color-light-grey;
+    cursor: pointer;
+    font-family: $font-primary;
+    font-size: 14px;
+    margin: 0 0 1px 0;
+    padding: 7px 11px;
+    font-weight: bold;
+    padding: 22px 10px 25px 0;
+    transition: all 0.3s cubic-bezier(0.25,0.1,0.25,1);
+    border: none;
+    border-bottom: 2px solid #555b63;
+}
+
+.accordion_body p {
+    font-family: $font-primary;
+    color: $color-light-grey;
+    padding: 18px 5px;
+    margin: 0px;
+}
+
+.plusminus {
+    float: right;
+}

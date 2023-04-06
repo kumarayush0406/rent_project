@@ -1,0 +1,171 @@
+.modern {
+    padding: 75px 0;
+
+    .modern-feature {
+        width: 100%;
+        display: flex;
+
+        @media (max-width:720px) {
+            flex-wrap: wrap;
+        }
+
+        .text-block {
+            width: 50%;
+
+            @media (max-width:720px) {
+                width: 100%;
+            }
+
+            .section__title {
+                padding-bottom: 10px;
+
+                h4 {
+                    color: $color-orange;
+                    font-size: 1rem;
+                    margin-bottom: 4px;
+                    letter-spacing: .3em;
+                    line-height: 1.12;
+                    font-weight: 500;
+                    font-family: $font-primary;
+                }
+
+                h3 {
+                    font-family: $font-primary;
+                    font-size: 3rem;
+                    letter-spacing: -.01em;
+                    font-weight: 500;
+                    @media (max-width:720px) {
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            .wrapper {
+                width: 100%;
+                display: flex;
+
+                .list-item__primary {
+                    width: 50%;
+                    padding: 1rem;
+                    @media (max-width:720px) {
+                        width: 100%;
+                    }
+
+                    ul {
+                        color: $color-light-grey;
+
+                        li {
+                            margin-bottom: 19px;
+                            line-height: 1.2;
+                        }
+                    }
+                }
+
+                .list-item__secondary {
+                    width: 50%;
+                    padding: 1rem;
+                    @media (max-width:720px) {
+                        width: 100%;
+                    }
+
+                    ul {
+                        color: $color-light-grey;
+
+                        li {
+                            margin-bottom: 19px;
+                            line-height: 1.2;
+                        }
+                    }
+                }
+            }
+        }
+
+        .image-block {
+            width: 50%;
+            @media (max-width:720px) {
+                width: 100%;
+            }
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+// @media (max-width: 768px) {
+//     .modern {
+//         padding: 75px 0;
+
+//         .modern-feature {
+//             width: 100%;
+//             display: flex;
+//             flex-wrap: wrap;
+
+//             .text-block {
+//                 width: 100%;
+
+//                 .section__title {
+//                     padding-bottom: 10px;
+
+//                     h4 {
+//                         color: $color-orange;
+//                         font-size: 1rem;
+//                         margin-bottom: 4px;
+//                         letter-spacing: .3em;
+//                         line-height: 1.12;
+//                         font-weight: 500;
+//                         font-family: $font-primary;
+//                     }
+
+//                     h3 {
+//                         font-family: $font-primary;
+//                         font-size: 3rem;
+//                         letter-spacing: -.01em;
+//                         font-weight: 500;
+//                     }
+//                 }
+
+//                 .wrapper {
+//                     width: 100%;
+//                     display: flex;
+
+//                     .list-item__primary {
+//                         width: 50%;
+//                         padding: 1rem;
+
+//                         ul {
+//                             color: $color-light-grey;
+
+//                             li {
+//                                 margin-bottom: 19px;
+//                                 line-height: 1.2;
+//                             }
+//                         }
+//                     }
+
+//                     .list-item__secondary {
+//                         width: 50%;
+//                         padding: 1rem;
+
+//                         ul {
+//                             color: $color-light-grey;
+
+//                             li {
+//                                 margin-bottom: 19px;
+//                                 line-height: 1.2;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+
+//             .image-block {
+//                 width: 100%;
+
+//                 img {
+//                     max-width: 100%;
+//                 }
+//             }
+//         }
+//     }
+// }

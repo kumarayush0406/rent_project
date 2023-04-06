@@ -1,0 +1,92 @@
+.flexible {
+    padding-top: 75px;
+    padding-bottom: 0px;
+
+    &__title {
+        margin-bottom: 35px;
+
+        h4 {
+            font-family: $font-primary;
+            font-size: 1rem;
+            letter-spacing: .3em;
+            margin-bottom: 4px;
+            font-weight: 500;
+            line-height: 1.12;
+            color: $color-orange;
+        }
+
+        h3 {
+            text-align: left;
+            font-family: $font-primary;
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: -.01em;
+            font-weight: 500;
+            line-height: 1.12;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        width: 50%;
+        margin-bottom: 65px;
+
+        @media (max-width:720px) {
+            width: 100%;
+        }
+
+        &:first-child img {
+            margin: 120px 0 65px;
+            transition: all 0.3s ease-in-out;
+            @media (max-width:720px) {
+                margin: 40px 0 65px;
+            }
+        }
+
+        &:nth-child(odd) img {
+            margin-bottom: 65px;
+            margin-right: 8.5%;
+        }
+
+        &:nth-child(2) img {
+            margin-top: 24px !important;
+        }
+
+        &:nth-child(even) img {
+            margin-left: 8.5%;
+            margin-top: -100px;
+
+            @media (max-width:720px) {
+                margin-left: 0;
+                margin-top: 0;
+            }
+        }
+
+        img {
+            width: 100%;
+            box-shadow: 0 5px 34px 0 RGB(0 0 0 / 9%);
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                box-shadow: 0 5px 36px 0 RGB(0 0 0 / 14%);
+                transform: translateY(-10px);
+            }
+        }
+
+        p {
+            font-family: $font-primary;
+            font-size: 1rem;
+            padding-top: 20px;
+            text-align: center;
+            font-weight: 700;
+        }
+    }
+}
+
+// .mg {
+//     margin-top: 120px;
+// }
